@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<views:MvxContentPage
+    x:Class="MVVM.Core.Views.StartView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:viewModels="clr-namespace:MVVM.Core.ViewModels"
+    xmlns:views="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms"
+    x:TypeArguments="viewModels:StartViewModel">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label
+                FontSize="30"
+                HorizontalOptions="CenterAndExpand"
+                Text="Welcome to Start View Dear!"
+                VerticalOptions="CenterAndExpand" />
+            <Button Command="{Binding NavigateToMenuViewCommand}" Text="Navigate To Menu" />
+        </StackLayout>
+    </ContentPage.Content>
+</views:MvxContentPage>
